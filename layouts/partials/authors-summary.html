@@ -1,0 +1,6 @@
+{{ range .Params.authors}}
+  <span>
+    Posted by&nbsp;{{- . | safeHTML -}}
+  </a>
+  </span>
+{{ end }}

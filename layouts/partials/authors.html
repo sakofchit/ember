@@ -1,0 +1,7 @@
+{{ range .Params.authors}}
+  <div class="container">
+    <span>
+      Posted by&nbsp;{{- . | safeHTML -}}
+    </a>
+  </span>
+{{ end }}

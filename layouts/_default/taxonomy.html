@@ -1,0 +1,7 @@
+{{ define "h1" }}All Posts by "{{ .Title }}"{{ end }}
+
+{{ define "main" }}
+  {{ range  .Pages }}
+    {{ partial "summary.html" . }}
+  {{ end }}
+{{ end }}

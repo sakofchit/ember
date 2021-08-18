@@ -1,0 +1,12 @@
+{{ define "h1" }}Page not found! <small>(error 404)</small>{{ end }}
+
+{{ define "main" }}
+  <p>
+    Unfortunately, we cannot find the requested page.
+  </p>
+  <p>
+    <a class="btn btn-primary btn-lg" href="{{ .Site.BaseURL }}">
+      Return to the main page
+    </a>
+  </p>
+{{ end }}

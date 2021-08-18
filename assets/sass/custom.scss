@@ -1,0 +1,96 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body {
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+	color: inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
+#content {
+	max-width: 666px;
+	margin: 0 auto;
+	padding: 64px 24px;
+}
+#blog-body {
+	max-width: 666px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+.section {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.section:last-of-type {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+small {
+	color: rgb(70, 70, 70);
+}
+ul li {
+	margin-bottom: 32px;
+}
+ul li:last-of-type {
+	margin-bottom: 0;
+}
+h1 {
+	font-weight: 600;
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 12px;
+}
+h2 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 16px;
+}
+h3 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000;
+	margin-bottom: 6px;
+}
+h6 {
+	font-weight: 800;
+	font-size: 14px;
+	color: rgba(48, 48, 48, 0.719);
+	margin-bottom: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align:right;
+}
+.link {
+	font-size: 16px;
+	line-height: 20px;
+	color: #000;
+	margin-right: 12px;
+}
+.links .link {
+	margin-right: 0;
+	display: block;
+	margin-bottom: 16px;
+}
+p {
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(58, 58, 58, 0.8);
+}

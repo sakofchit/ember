@@ -1,0 +1,15 @@
+<div id="content">
+    <div class="row">
+        <div class="col-md-6">
+            <a href="/"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="col-md-6">
+            <h6>All Posts</h6>
+        </div>
+    </div>
+    <div class="section">
+          {{ range (.Paginator 4).Pages }}
+              {{- partial "summary.html" . -}}
+          {{ end }}
+      </div>
+</div>

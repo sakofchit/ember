@@ -1,0 +1,10 @@
+<div class="container"><br><br>
+    {{ range .Params.authors}}
+    <span style="color:white; font-size:30px;" class="header-text">
+        Posted by&nbsp;{{- . | safeHTML -}}
+    </a>
+    </span>
+    {{ end }}
+
+</div>
+<div class="break"></div>

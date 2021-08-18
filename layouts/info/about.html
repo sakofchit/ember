@@ -1,0 +1,7 @@
+{{ define "h1" }}{{- .Title -}}{{ end }}
+
+{{ define "main" }}
+  <p>{{- .Content -}}</p>
+  
+  {{- partial "i18n-list.html" . -}}
+{{ end }}

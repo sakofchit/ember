@@ -1,0 +1,14 @@
+{{ define "h1" }}{{- .Title -}}{{ end }}
+
+{{ define "main" }}
+
+{{- partial "blog-title.html" . -}}
+
+{{- partial "post-layout.html" . -}}
+
+{{- partial "blogs.html" . -}}
+
+  {{- partial "i18n-list.html" . -}}
+  
+  {{- template "_internal/pagination.html" . -}}
+{{ end }}

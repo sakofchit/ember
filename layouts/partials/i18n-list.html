@@ -1,0 +1,10 @@
+{{ if .IsTranslated }}
+<h3>{{ i18n "translations" (len .Translations) }}</h3>
+<ul>
+    {{ range .Translations }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}: {{ .Title }}</a>
+    </li>
+    {{ end}}
+</ul>
+{{ end }}

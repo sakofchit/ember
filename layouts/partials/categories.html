@@ -1,0 +1,8 @@
+{{ range .Params.categories}}
+    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}"
+    class="badge badge-pill badge-primary">
+      {{- . -}}
+    </a>
+{{ end }}
+
+<br><br>

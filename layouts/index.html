@@ -1,0 +1,65 @@
+{{ define "main" }}
+<div id="content">
+  <div class="section">
+    <h1>Sakun Acharige</h1>
+
+    <a href="https://twitter.com/sakofchit" target="_blank" class="link"><i class="fab fa-twitter"></i></a>
+    <a href="https://github.com/sakofchit" target="_blank" class="link"><i class="fab fa-github-alt"></i></a>
+    <a href="/notes" class="link"><i class="fas fa-book"></i></a>
+  </div>
+
+  <div class="section">
+    <h6>Projects</h6>
+    <ul>
+      <li>
+        <h3><a target="_blank" href="https://retromusic.co">Retro</a></h3>
+        <p>"iPod" Classic for iOS & Android. Currently in public beta.</p>
+      </li>
+     <li>
+        <h3><a target="_blank" href="https://sideprojects.net">SideProjects</a></h3>
+        <p>Share side projects you're working on.</p>
+      </li>
+      <li>
+        <h3><a target="_blank" href="https://www.producthunt.com/posts/read-faster">Read Shit Faster</a><small> (defunct)</small></h3>
+        <p>Speed-reading tool I built in a weekend. Over 100k unique visitors, featured on ProductHunt, LifeHacker & Gizmodo</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h6>Work</h6>
+    <ul>
+      <li>
+        <h3><a href="https://quantumlionlabs.com">Quantum Lion Labs</a><small> April - June 2021</small></h3>
+        <p>Built & Designed the website/CMS for <a href="https://quantumlionlabs.com">Quantum Lion Labs</a> and their upcoming VR experience, <a href="https://kill-the-king.com">Kill The King</a></p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h6>Open Source</h6>
+    <ul>
+      <li>
+        <h3><a href="https://github.com/retromp3/Retro-Nano">Retro Nano</a></h3>
+        <p>WatchOS app that "transforms" your Apple Watch into an iPod nano 6th gen. Still very early in development.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/sakofchit/ember">Ember</a></h3>
+        <p>Hugo Theme for personal sites/portfolios <small style="font-size:8px;">(I'm using it right now)</small></p>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div class="section">
+    <h6>Notes</h6>
+      {{ range (.Paginator 4).Pages }}
+          {{- partial "summary.html" . -}}
+      {{ end }}
+      <a href="/notes"><button type="button" class="btn btn-warning" style="margin:auto; display:block">See All</button></a>
+      <p></p>
+  </div>
+
+
+
+{{ end }}
